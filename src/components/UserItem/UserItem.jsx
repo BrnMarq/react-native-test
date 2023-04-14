@@ -1,9 +1,18 @@
 import { View, Text, StyleSheet, TouchableWithoutFeedback } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome5";
+import { useNavigation } from "@react-navigation/native";
 
-const UserItem = ({ name, company }) => {
+import globalStyles from "@src/styles/globalStyles";
+
+const UserItem = ({ id, name, company }) => {
+	const navigation = useNavigation();
+
+	const goToUserDetail = () => {
+		navigation.navigate("UserDetail", { id });
+	};
+
 	return (
-		<TouchableWithoutFeedback onPress={() => console.log("Pressed")}>
+		<TouchableWithoutFeedback onPress={goToUserDetail}>
 			<View style={styles.card}>
 				<View>
 					<Text style={styles.name}>{name}</Text>
@@ -19,18 +28,7 @@ const UserItem = ({ name, company }) => {
 
 const styles = StyleSheet.create({
 	card: {
-		marginTop: 10,
-		backgroundColor: "#fff",
-		shadowColor: "#000",
-		shadowOffset: {
-			width: 0,
-			height: 0,
-		},
-		shadowRadius: 3,
-		shadowOpacity: 0.1,
-		borderRadius: 5,
-		padding: 10,
-		marginHorizontal: 3,
+		...globalStyles.card,
 		display: "flex",
 		flexDirection: "row",
 		justifyContent: "space-between",

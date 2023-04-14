@@ -28,8 +28,6 @@ const UsersList = () => {
 
 const styles = StyleSheet.create({
 	container: {
-		height: "100%",
-		marginVertical: 70,
 		marginHorizontal: 20,
 	},
 	title: {
