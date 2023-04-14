@@ -13,7 +13,7 @@
     ├── 📦️ components
     ├── 🔍️ navigation
     ├── 📱 screens
-    ├── 💡 services
+    ├── 🚀 services
     └── 💄 styles
 ```
 
@@ -39,7 +39,7 @@
 
 <br>
 
-## 💡 Services
+## 🚀 Services
 
 &nbsp; Here I stored the graphql logic. This was mainly my problem with graphql, I didn't know well where to store it, so this was my better idea.
 
@@ -50,3 +50,12 @@
 &nbsp; This folder stores the global styles of the app, for the purpose of avoiding style redefinitions.
 
 <br>
+
+# 💡 Possible Improvements
+
+&nbsp; This is something that I always do when "finalizing" a project(I always have new ideas while developing). I would like to add a search bar on the top, where the navigation header is placed, so that you can filter the users. The pagination wasn't implemented because the api return only ten users, and the api doesn't support offset pagination neither page pagination, I did think that I could implemented it by limiting the users array, and splice it constantly, but it would add more complexity to frontend and the pagination wouldn't have sense, I'm still fetching all the data, so paginating in the frontend would be as bad as not paginating at all. If I have to say, I will use infinite scroll to make the pagination btw, it seems very funny to implement.
+
+<br>
+<br>
+
+## 🍻 Thanks for reading!
