@@ -3,7 +3,7 @@ import { useQuery } from "@apollo/client";
 import { GET_USERS } from "@src/services";
 
 import Loading from "@src/components/Loading";
-import UserItem from "@src/components/UserItem";
+import UserItem from "@src/components/UserCard";
 
 const UsersList = () => {
 	const { loading, error, data } = useQuery(GET_USERS);

@@ -17,11 +17,6 @@ const UserDetail = ({ navigation, route }) => {
 		variables: { id },
 	});
 
-	if (loading) return <Loading />;
-	if (error) return <Text>The request has failed, please reload</Text>;
-
-	const { user } = data;
-
 	useEffect(() => {
 		navigation.setOptions({
 			headerLeft: () => (
@@ -34,6 +29,11 @@ const UserDetail = ({ navigation, route }) => {
 			),
 		});
 	}, [navigation, id]);
+
+	if (loading) return <Loading />;
+	if (error) return <Text>The request has failed, please reload</Text>;
+
+	const { user } = data;
 
 	return (
 		<SafeAreaView style={styles.container}>
