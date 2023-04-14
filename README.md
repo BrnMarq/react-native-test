@@ -3,7 +3,6 @@
 &nbsp; The project was made thinking that it will be used by a team manager, so it will list the users and the company where it works, which I think were the mainly data that the client will want to see. The other information can be accessed by pressing the user card.
 
 <br>
-<br>
 
 # 🗃️ Folder Structure
 
@@ -55,7 +54,6 @@
 
 &nbsp; This is something that I always do when "finalizing" a project(I always have new ideas while developing). I would like to add a search bar on the top, where the navigation header is placed, so that you can filter the users. The pagination wasn't implemented because the api return only ten users, and the api doesn't support offset pagination neither page pagination, I did think that I could implemented it by limiting the users array, and splice it constantly, but it would add more complexity to frontend and the pagination wouldn't have sense, I'm still fetching all the data, so paginating in the frontend would be as bad as not paginating at all. If I have to say, I will use infinite scroll to make the pagination btw, it seems very funny to implement.
 
-<br>
 <br>
 
 ## 🍻 Thanks for reading!
